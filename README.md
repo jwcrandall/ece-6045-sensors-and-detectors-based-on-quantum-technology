@@ -1,3 +1,3 @@
-# csci-6800-computational-techniques
-csci-6800-computational-techniques
+# ece 6045 sensors and detectors based on quantum technology
+notes 
 
