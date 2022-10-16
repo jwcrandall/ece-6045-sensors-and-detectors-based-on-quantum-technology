@@ -4,15 +4,30 @@
 \begin{enumerate}
     \item [1.] \textbf{Q.} Show that polarization is observable for a polarization beam splitter. \textbf{A.} 
   
-    \begin{aligned}
-    \hat{A}_\theta & =\left|1_\theta\right\rangle\left\langle 1_\theta|-| 1_{\theta+\pi / 2}\right\rangle\left\langle 1_{\theta+\pi / 2}\right| \\
+    \begin{align*}
+    \hat{A}_\theta & = \left| 1_\theta \right\rangle \left\langle 1_\theta\right|
+    - \left|1_{\theta+\pi / 2}\right\rangle \left\langle 1_{\theta+\pi / 2} \right| \\
     \left|1_\theta\right\rangle &= \cos \theta\left|1_x\right\rangle+\sin \theta\left|1_y\right\rangle \\
-    \left|1_{\theta+\pi / 2}\right\rangle &= -\sin \theta\left|1_x\right\rangle+\cos \left|1_y\right\rangle \\
-    {\left[\hat{A}_\theta\right] &= \left[\begin{array}{cc}
+    \left\langle1_\theta\right| &= \cos \theta\left\langle1_x\right|+\sin \theta\left\langle1_y\right| \\
+    \left| 1_\theta \right\rangle \left\langle 1_\theta\right| & = \left[\begin{array}{cc}
+    \cos^2 \theta & \cos\theta \sin\theta \\
+    \sin\theta \cos \theta & \sin^2 \theta
+    \end{array}\right]\\
+    \left|1_{\theta+\pi / 2}\right\rangle & = -\sin \theta\left|1_x\right\rangle+\cos\theta \left|1_y\right\rangle \\
+    \left\langle1_{\theta+\pi / 2}\right| & = -\sin \theta \left\langle1_x\right|+\cos\theta \left\langle1_y\right| \\
+    \left|1_{\theta+\pi / 2}\right\rangle \left\langle 1_{\theta+\pi / 2} \right| &= \left[\begin{array}{cc}
+    \sin^2 \theta & -\sin\theta\cos\theta\\
+    -\cos\theta\sin\theta & \cos^2 \theta
+    \end{array}\right]\\
+    \left[\hat{A}_\theta\right] &= \left[\begin{array}{cc}
+    \cos^2 \theta - \sin^2 \theta & 2\sin\theta\cos\theta \\
+    2\sin\theta\cos\theta & \sin^2 \theta - \cos^2 \theta
+    \end{array}\right]\\
+    \left[\hat{A}_\theta\right] &= \left[\begin{array}{cc}
     \cos 2 \theta & \sin 2 \theta \\
     \sin 2 \theta & -\cos 2 \theta
-    \end{array}\right]}
-    \end{aligned}
+    \end{array}\right]
+    \end{align*}
 
 \end{enumerate}
 
